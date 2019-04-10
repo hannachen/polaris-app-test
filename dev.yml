@@ -1,0 +1,20 @@
+name: polaris-app-test
+
+type: node
+
+up:
+  - railgun
+  - node:
+      version: v8.11.1
+      yarn: true
+      packages:
+        - .
+
+commands:
+  # console:
+  server: yarn start
+  build: yarn build
+  test: yarn test
+
+open:
+  app: https://polaris-app-test.myshopify.io
